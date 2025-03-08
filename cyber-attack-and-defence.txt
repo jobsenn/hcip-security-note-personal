@@ -1,0 +1,36 @@
+ddos attacks are hard to defend against because it is difficult to distinguish legitimate traffic from attack traffic.
+firewalls defend against the following : 
+    single packet attacks
+         scanning attacks 
+            these probe the network before the real attacks 
+                include ip sweep attack,
+                    an attacker can use icmp packets (ping , tracert) to probe a network and know what systems are online
+                    #how to defend , if the number of requests from a single ip address exeeds a certain threshold, block the ip address
+                 port scan attack 
+                    probing a system to determine which ports are online
+                    #how to defend , if number of requests from single ip to different ports exeeds threshold , block the ip address
+         malformed packet attacks
+             attackers send malformed packets in an attempt to crash the target systems 
+                 ping of death 
+                 smurf 
+                    attacker send large number of icmp to many devices with the source set to the target server, causing the devices to reply to the target , network bandwidth and system resources are used 
+                 fraggle
+                 Land attack 
+                 ip spoofing
+                    and attacker sends packets with false source ip address
+                    #the firewall checks whether the outbound interface corresponds to the source ip address in the routing table 
+                 teardrop
+                 fragment flag bit and offset bit in the ip header 
+                 so the attacker modifies the offset of the bit so that the receiver struggles to reassemble the packet, causing wastage of system resources 
+                 #the firewall checks whether the fragment offsets are correct and whether the fragment flags are set correctly
+                 ip fragment attack
+                 tcp flag attack
+
+         special packet attacks 
+             use special control packets to probe the network before the real attack 
+                 icm redirect attack 
+                 tracert attack 
+
+    ddos attacks
+        these attacks block legitimate users from accesing the system
+        consuming bandwidth and resources of the target system
