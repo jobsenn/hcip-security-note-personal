@@ -1,0 +1,40 @@
+communication network security requirement 
+     device redudancy
+     line redudancy
+     encrypted transmission (site to site   ---ipsec vpn)
+                            (site to client ---ssl vpn)
+     bandwodth management 
+
+security requirements at the boundary 
+    application content security filtering 
+         url filtering
+         dns filtering
+         file type filtering
+         data filtering (file data filtering, application data filtering)
+         mail filtering
+
+
+
+            secure communication network
+
+         • High reliability
+         technologies
+         • Intelligent uplink
+         selection on the firewalls
+         • VPN technologies
+         • Traffic management
+         technologies
+
+         security boundary
+         • Cyber attack and defense
+            • Firewall virtual
+            system
+            • Content security
+            and filtering
+
+            secure computing environment
+
+
+            security management center 
+
+            
