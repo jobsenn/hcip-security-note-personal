@@ -12,10 +12,15 @@ firewalls defend against the following :
          malformed packet attacks
              attackers send malformed packets in an attempt to crash the target systems 
                  ping of death 
-                 smurf 
+                 smurf (using the broadcast of a network to attack the target)
                     attacker send large number of icmp to many devices with the source set to the target server, causing the devices to reply to the target , network bandwidth and system resources are used 
+                    #disable icmp request to the broadcast address
                  fraggle
-                 Land attack 
+                    similar to smurf but uses udp port 7 or 19 echo and request to the broadcast address instead of icmp
+                    #disable udp echo requests to port 7 and 19 
+                 Land attack (or loopback attack)
+                    attacker sends a packet with the source ip address set to the target ip address and the destination ip address set to the target ip address
+                    #the firewall checks whether the source and destination ip addresses are the same
                  ip spoofing
                     and attacker sends packets with false source ip address
                     #the firewall checks whether the outbound interface corresponds to the source ip address in the routing table 
