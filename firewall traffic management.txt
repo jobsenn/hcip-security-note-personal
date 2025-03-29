@@ -15,3 +15,5 @@ default traffic policy on a firewall : all matching conditions are any and no tr
 traffic policy types : 
     same level policy 
     hierachical policy (parent-child)
+
+    
