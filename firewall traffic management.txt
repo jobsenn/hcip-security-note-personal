@@ -1,0 +1,17 @@
+bandwidth management and quota control policies
+    bandwidth limit 
+    connection limit 
+    bandwidth assuarance 
+
+bandwidth management process 
+    policies
+    profiles 
+    interface bandwidth
+
+a traffic policy is a collection of multiple policy rules with each rule containing a specific condition and action 
+default traffic policy on a firewall : all matching conditions are any and no traffic limiting 
+
+
+traffic policy types : 
+    same level policy 
+    hierachical policy (parent-child)
