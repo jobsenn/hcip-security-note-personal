@@ -1,0 +1,37 @@
+virtualization can reduce hardware costs, power consumption, and space.
+
+virtual systems -resource virtualization
+                -configuration virtualization  
+                route virtualization
+                security function virtualization
+
+
+application scenario for vsys
+    network isolation for large and smes
+    cloud computing and security gateway 
+
+
+vsys features 
+    independent management
+    resource allocation(the activities of one firewall do not affect the other firewalls)
+    traffic isolation - traffic is different (however, can be set to communicate with each other if needed)
+    independent configuration - each vsys can have its own configuration, policies, and rules
+
+types of vsys
+    public system 
+        special and exists by default 
+        inherits the configuration of the physical system
+        manages virtual systems and their resources and communication btn them 
+    virtual system 
+        this is an independent logical firewall 
+
+
+configuration roadmap 
+    enable the virtual system function and create virtual systems
+    configure and alocate resource class 
+    allocate interfaces (public and virtual system interfaces)
+    configure ip addresses
+    configure routes 
+    configure security policies and rules
+    configure nat policies
+    
